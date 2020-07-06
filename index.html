@@ -4,19 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenLayers Hello</title>
-  <style>
-    body{
-      margin: 0;
-      padding: 0;
-    }
-    #map{
-      width: 100vw;
-      height: 100vh;
-    }
-  </style>
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/skeleton.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-  <div id="map"></div>
+  <div id="main-wrapper">
+    <header id="main-header">
+      <div id="brand">CERD</div>
+      <nav id="navbar">
+        <a href="#menu-toggle" id="hamburger-menu">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+        </a>
+        <ul class="navbar-list-opened" id="navbar-list">
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+          <li><a href="#">Test</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="app">
+      <div id="app-wrapper">
+        <h1>OpenLayers with VanillaJS</h1>
+        <div id="map"></div>
+      </div>
+    </main>
+  </div>
+  
   <script src="./index.js"></script>
+  <script src="./assets/js/menu.js"></script>
 </body>
 </html>

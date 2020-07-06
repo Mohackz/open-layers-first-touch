@@ -5,7 +5,7 @@ import OSM from "ol/source/OSM"
 import {fromLonLat} from "ol/proj"
 import geojson from "./geo.json"
 
-console.log(geojson);
+console.log(geojson.features);
 
 
 const djibouti = [42.590275,11.825138];
